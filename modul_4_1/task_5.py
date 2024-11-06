@@ -3,7 +3,6 @@
 # качестве параметров. Если границы диапазона перепутаны
 # (например, 5 - верхняя граница; 25 - нижняя граница), их нужно
 # поменять местами.
-from itertools import product
 
 
 def product_numbers():
@@ -17,11 +16,11 @@ def product_numbers():
 
     lower, upper = sorted(number_list)
 
-    product = 1
+    product_digit = 1
 
     for i in range (lower, upper + 1):
-        product *= i
-    print(f"Произведение чисел введенного диапазона равна: {product}")
+        product_digit *= i
+    print(f"Произведение чисел введенного диапазона равна: {product_digit}")
 
 product_numbers()
 
